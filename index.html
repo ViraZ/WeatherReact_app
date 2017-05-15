@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.map"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<title>Weather Application</title>
+</head>
+<body>
+	<input type="text" id="new-location" placeholder="Enter your Location">
+<section id="container">
+  <section class="weather-data">
+<div id="main-data">
+      <img src="http://openweathermap.org/img/w/" id="weather-icon">
+      <span id="cur-temp"></span>
+      <h3 id="city-name"></h3>
+      <p id="change-location">Change Location</p>
+    </div>
+
+    <div class="weather-data">
+      <div class="left-table">
+        <p>Daily Forecast: <span id="today"></span></p>
+        <p>Description: <span id="w-descript"></span></p>
+        <p>Max temperature: <span id="max-temp"></span></p>
+        <p>Min temperature: <span id="min-temp"></span></p>
+      </div>
+      <div class="right-table">
+        <p>Wind Speed: <span id="wind-speed"></span></p>
+        <p>Feels like: <span id="wind-chill"></span></p>
+        <p>Humidity: <span id="humid"></span></p>
+        <p>Pressure: <span id="pressure"></span></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+<div class="Historical">
+<p>Data history location <span id="hist"></span>
+<button onclick="show()"> Show my all about thead city</button>
+
+</div>
+  </section>
+</section>
+
+<!--http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt-->
+<
+</body>
+</html>

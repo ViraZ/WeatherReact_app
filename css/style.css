@@ -1,0 +1,87 @@
+/* LESS Variable */
+@containerMaxWidth: 660px;
+@containerBg: rgba(135,135,135, 0.5);
+@contanerRadius: 8px;
+@containerShadow: 3px 4px 8px #222;
+@mainFont: 'Open Sans', sans-serif;
+@rightTableSize: 50%;
+@leftTableSize: 50%;
+/* 
+ Less function for applying transition animations
+ @prop - the element property for animation (e.g color)
+ @t - time: the durtation of the animation in seconds 
+*/
+.transition(@prop, @t) {
+  -webkit-transition: @prop @t ease-in-out;
+  -moz-transition: @prop @t ease-in-out;
+  -o-transition: @prop @t ease-in-out;
+  transition: @prop @t ease-in-out;
+}
+
+body, html {
+  width:100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+  font-family: @mainFont
+}
+
+.clear {
+  clear:both;
+}
+
+p{
+  font-weight: bold;
+}
+
+#new-location {
+  width: 350px;
+  height: 25px;
+  margin: 5px auto;
+  padding-left: 5px;
+  border-radius: 6px;
+  display: block;
+}
+
+#change-location{
+  color: #FFCC00;
+  .transition(color, 0.3s);
+}
+#change-location:hover {
+  color: #003366;
+  cursor: pointer;
+}
+
+#container {
+  width: 100%;
+  max-width: @containerMaxWidth;
+  margin: 50px auto;
+  background-color:@containerBg;
+  border-radius: @contanerRadius;
+  box-shadow: @containerShadow
+}
+
+#main-data{
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+#weather-icon {
+  width:60px
+}
+
+#cur-temp {
+  font-size: 26px;
+}
+
+.left-table {
+  width: 50%;
+  text-align:center;
+  float:left;
+}
+
+.right-table {
+  width:50%;
+  text-align: center;
+  float:right;
+}

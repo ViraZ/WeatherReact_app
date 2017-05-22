@@ -1,4 +1,3 @@
-// Object holding the various weather icons 
 var weatherIcons = {
   clear: {
     day: 'http://cdn.quotesgram.com/small/16/83/1293318956-8d5da479eb6dc3eb194fb8cd4f3c66a2.jpg',
@@ -127,9 +126,7 @@ var weatherApp = {
     var maxTemp = $('#max-temp');
     var minTemp = $('#min-temp');
     //add something new
-    var hist = $('#hist');
-
-    // ********************
+      // ********************
     // * End Local variables *
     // ********************
 
@@ -187,39 +184,3 @@ $(document).ready(function() {
     console.log(err);
   }
 });
-
-
-
-/*
-downloadAsync(url function(url){
-    function(text){
-      console.log(text);
-      }});
-    
-
-db.lookupAsync("url", function(url){
-  downloadAsync(url, function(text){
-    console.log(url + text);
-  });
-});
-
-var text = downloadSync("www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt");
-  downloadAsync("www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt",
-    function(text){
-      console.log(text);
-    });
-$(document).ready(function() {
-   $.ajax({
-        url:"http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt",
-        cache:false,
-        success:function(data){
-            show();
-        }
-    });
-   function show(){
-     $.each(data.countries, function(iterator){
-      document.getElementById('hist').PROCESSING_INSTRUCTION_NODE
-
-});
-
-  };*/
